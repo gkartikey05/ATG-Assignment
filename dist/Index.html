@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style.css" />
+
+    <title>Basic Responsiveness Task</title>
+  </head>
+  <body class="font-IBM">
+    <header
+      class="flex justify-between items-center mx-[72px] h-[72px] flex-shrink-0"
+    >
+      <a href="#" id="logo"><img src="../assets/Logo.png" alt="" /></a>
+      <div class="flex box-border items-center relative">
+        <img
+          src="../assets/search-icon.png"
+          alt=""
+          class="h-[22px] w-[22px] absolute top-[10px] left-[14px]"
+        />
+        <input
+          type="search"
+          placeholder="Search for your favorite groups in ATG"
+          class="w-[360px] h-[42px] bg-[#F2F2F2] rounded-[21px] flex-shrink-0 pl-[50px]"
+        />
+      </div>
+      <div class="flex items-center">
+        <p class="font-medium text-[#2E2E2E] text-base">
+          Create account.
+          <span class="font-bold text-[#2F6CE5]">It's free!</span>
+        </p>
+        <img src="../assets/write-post-icon.png" alt="" />
+      </div>
+    </header>
+
+    <section class="relative">
+      <img src="../assets/hero-image.png" alt="" class="brightness-50"/>
+      <div class="absolute top-[286px] left-[180px]">
+        <h2 class="text-white text-4xl font-bold">Computer Engineering</h2>
+        <p class="text-lg text-white font-normal">
+          142,765 Computer Engineers follow this
+        </p>
+      </div>
+    </section>
+
+    <div class="h-8"></div>
+    <section
+      class="mx-[180px] h-14 flex justify-between items-center border-b-[1px] border-b-[#E0E0E0]"
+    >
+      <div class="nav-links">
+        <a
+          href="#all-post"
+          class="pb-[17px] text-[#8A8A8A] border-b-[1px] hover:text-black focus:text-black hover:border-b-black focus:border-b-black"
+          >All Posts(32)</a
+        >
+        <a
+          href="#article"
+          class="pb-[17px] text-[#8A8A8A] border-b-[1px] hover:text-black ml-5 focus:text-black hover:border-b-black focus:border-b-black"
+          >Article</a
+        >
+        <a
+          href="#event"
+          class="pb-[17px] text-[#8A8A8A] border-b-[1px] hover:text-black ml-5 focus:text-black hover:border-b-black focus:border-b-black"
+          >Event</a
+        >
+        <a
+          href="#education"
+          class="pb-[17px] text-[#8A8A8A] border-b-[1px] hover:text-black ml-5 focus:text-black hover:border-b-black focus:border-b-black"
+          >Education</a
+        >
+        <a
+          href="#job"
+          class="pb-[17px] text-[#8A8A8A] border-b-[1px] hover:text-black ml-5 focus:text-black hover:border-b-black focus:border-b-black"
+          >Job</a
+        >
+      </div>
+
+      <div class="flex">
+        <button
+          class="flex justify-evenly items-center w-[133px] h-9 bg-[#EDEEF0] flex-shrink-0 rounded-[4px] box-border mr-4"
+        >
+          Write a Post <img src="../assets/write-post-icon.png" alt="" />
+        </button>
+        <button
+          class="flex justify-evenly items-center w-[125px] h-9 bg-[#2F6CE5] rounded-[4px] text-white"
+        >
+          <img src="../assets/join-group-icon.png" alt="" /> Join Group
+        </button>
+      </div>
+    </section>
+
+    <section class="mt-7 mx-[180px] flex justify-between items-start">
+      <main class="pb-20">
+        <div
+          id="article-1"
+          class="w-[692px] h-[472px] flex-shrink-0 rounded-[4px] border-[#E0E0E0] border-[1px] mb-4"
+        >
+          <img src="../assets//article-1.png" alt="" />
+          <div class="p-5">
+            <img src="../assets//article-1-icon.png" alt="" class="mb-[10px]" />
+            <div>
+              <div class="flex justify-between items-start">
+                <h2 class="text-[22px] font-semibold">
+                  What if famous brands had regular fonts? Meet RegulaBrands!
+                </h2>
+                <img src="../assets/three-dots.png" alt="" />
+              </div>
+              <!-- <div id="three-dots">
+                <p>Edit</p>
+                <p>Report</p>
+                <p>Delete</p>
+              </div> -->
+            </div>
+            <p class="text-[18px] text-[#5C5C5C] mt-3">
+              I've worked in UX for the better part of a decade. From now on, I
+              plan to rei...
+            </p>
+            <div class="flex items-center justify-between mt-8">
+              <div class="flex items-center">
+                <img src="../assets/article-1-owner.png" alt="" />
+                <p class="font-semibold text-[18px] ml-[10px]">Sarthak Kamra</p>
+              </div>
+              <div class="flex items-center gap-x-12">
+                <div class="flex items-center gap-x-[10px]">
+                  <img src="../assets/eye-icon.png" alt="" />
+                  <p class="text-[#525252]">1.4k views</p>
+                </div>
+                <div class="">
+                  <img
+                    src="../assets/share-btn.png"
+                    alt=""
+                    class="box-border px-[18px] py-3 rounded-sm bg-[#EDEEF0]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="article-2"
+          class="w-[692px] h-[472px] flex-shrink-0 rounded-[4px] border-[#E0E0E0] border-[1px] mb-4"
+        >
+          <img src="../assets//article-2-img.png" alt="" />
+          <div class="p-5">
+            <img src="../assets//article-2-icon.png" alt="" class="mb-[10px]" />
+            <div>
+              <div class="flex justify-between items-start gap-x-5">
+                <h2 class="text-[22px] font-semibold">
+                  Tax Benefits for Investment under National Pension Scheme
+                  launched by Government
+                </h2>
+                <img src="../assets/three-dots.png" alt="" />
+              </div>
+              <!-- <div id="three-dots">
+                <p>Edit</p>
+                <p>Report</p>
+                <p>Delete</p>
+              </div> -->
+            </div>
+            <p class="text-[18px] text-[#5C5C5C] mt-3">
+              I've worked in UX for the better part of a decade. From now on, I
+              plan to rei...
+            </p>
+            <div class="flex items-center justify-between mt-8">
+              <div class="flex items-center">
+                <img src="../assets/article-2-owner.png" alt="" />
+                <p class="font-semibold text-[18px] ml-[10px]">Sarah West</p>
+              </div>
+              <div class="flex items-center gap-x-12">
+                <div class="flex items-center gap-x-[10px]">
+                  <img src="../assets/eye-icon.png" alt="" />
+                  <p class="text-[#525252]">1.4k views</p>
+                </div>
+                <div>
+                  <img
+                    src="../assets/share-btn.png"
+                    alt=""
+                    class="box-border px-[18px] py-3 rounded-sm bg-[#EDEEF0]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="article-3"
+          class="w-[692px] h-[472px] flex-shrink-0 rounded-[4px] border-[#E0E0E0] border-[1px] mb-4"
+        >
+          <img src="../assets//article-3-img.png" alt="" />
+          <div class="p-5">
+            <img src="../assets//article-3-icon.png" alt="" class="mb-[10px]" />
+            <div>
+              <div class="flex justify-between items-start gap-x-5">
+                <h2 class="text-[22px] font-semibold">
+                  Finance & Investment Elite Social Mixer @Lujiazui
+                </h2>
+                <img src="../assets/three-dots.png" alt="" />
+              </div>
+              <!-- <div>
+                <p>Edit</p>
+                <p>Report</p>
+                <p>Delete</p>
+              </div> -->
+            </div>
+            <div class="flex items-center mt-[10px]">
+              <div class="flex items-center">
+                <img src="../assets/calander-icon.png" alt="" />
+                <p class="text-[15px] font-medium ml-2">Fri, 12 Oct, 2018</p>
+              </div>
+              <div class="flex items-center ml-16">
+                <img src="../assets/location-icon.png" alt="" />
+                <p class="text-[15px] font-medium ml-2">Ahmedabad, India</p>
+              </div>
+            </div>
+            <a href="#" class="text-[#E56135] text-[13px] font-semibold">
+              <div
+                class="w-[652px] h-[38px] flex-shrink-0 border-[0.7px] border-[#A9AEB8] rounded-lg text-center mt-4 content-center"
+              >
+                Visit Website
+              </div>
+            </a>
+            <div class="flex items-center justify-between mt-5">
+              <div class="flex items-center">
+                <img src="../assets/article-3-owner.png" alt="" />
+                <p class="font-semibold text-[18px] ml-[10px]">Ronal Jones</p>
+              </div>
+              <div class="flex items-center gap-x-12">
+                <div class="flex items-center gap-x-[10px]">
+                  <img src="../assets/eye-icon.png" alt="" />
+                  <p class="text-[#525252]">1.4k views</p>
+                </div>
+                <div>
+                  <img
+                    src="../assets/share-btn.png"
+                    alt=""
+                    class="box-border px-[18px] py-3 rounded-sm bg-[#EDEEF0]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="article-4"
+          class="w-[692px] h-[269px] flex-shrink-0 rounded-[4px] border-[#E0E0E0] border-[1px] mb-4 p-5"
+        >
+          <img src="../assets//article-4-icon.png" alt="" />
+          <div>
+            <div class="flex justify-between items-start gap-x-5">
+              <h2 class="text-[22px] font-semibold mt-[10px]">
+                Software Developer
+              </h2>
+              <img src="../assets/three-dots.png" alt="" />
+            </div>
+            <!-- <div>
+              <p>Edit</p>
+              <p>Report</p>
+              <p>Delete</p>
+            </div> -->
+          </div>
+          <div class="flex items-center mt-[10px]">
+            <div class="flex items-center">
+              <img src="../assets/suitcase-icon.png" alt="" />
+              <p class="text-[15px] font-medium ml-2">
+                Innovaccer Analytics Private Ltd.
+              </p>
+            </div>
+            <div class="flex items-center ml-16">
+              <img src="../assets/location-icon.png" alt="" />
+              <p class="text-[15px] font-medium ml-2">Noida, India</p>
+            </div>
+          </div>
+          <a href="#" class="text-[#02B875] text-[13px] font-semibold">
+            <div
+              class="w-[652px] h-[38px] flex-shrink-0 border-[0.7px] border-[#A9AEB8] rounded-lg text-center mt-4 content-center"
+            >
+              Apply on Timesjobs
+            </div>
+          </a>
+          <div class="flex items-center justify-between mt-8">
+            <div class="flex items-center">
+              <img src="../assets/article-4-owner.png" alt="" />
+              <p class="font-semibold text-[18px] ml-[10px]">Ronal Jones</p>
+            </div>
+            <div class="flex items-center gap-x-12">
+              <div class="flex items-center gap-x-[10px]">
+                <img src="../assets/eye-icon.png" alt="" />
+                <p class="text-[#525252]">1.4k views</p>
+              </div>
+              <div>
+                <img
+                  src="../assets/share-btn.png"
+                  alt=""
+                  class="box-border px-[18px] py-3 rounded-sm bg-[#EDEEF0]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="max-w-[243px]">
+        <div
+          class="flex justify-between items-center h-10 border-b-[1px] border-b-[#B8B8B8]"
+        >
+          <div class="flex items-center justify-start">
+            <img src="../assets/location-icon.png" alt="" />
+            <p class="ml-1 text-sm">Noida, India</p>
+          </div>
+          <img src="../assets/pencil-icon.png" alt="" class="h-5 w-5" />
+        </div>
+        <div class="flex justify-between items-start mt-6">
+          <img src="../assets/error-icon.png" alt="" />
+          <p class="w-[220px] text-xs ml-1 opacity-50">
+            Your location will help us serve better and extend a personalised
+            experience.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
